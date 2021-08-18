@@ -1,9 +1,9 @@
 # Todo
 
-## Working project
+## Working project [https://mrvangonen.github.io/todo/](https://mrvangonen.github.io/todo/)
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/44434778/129904096-05363dd1-3a47-4203-8efc-ee8571ce8db6.gif)
 
-See [https://mrvangonen.github.io/todo/](https://mrvangonen.github.io/todo/)
+Add, edit, complete and remove your todos.
 
 ## Project setup 📂
 ```
