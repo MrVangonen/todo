@@ -1,10 +1,10 @@
 language: node_js
 node_js:
- - "node"
+- 6.14.14
 
 cache: npm
 
-script: npm cache clean --force; npm run build
+script: npm run build
 
 deploy:
  provider: pages
