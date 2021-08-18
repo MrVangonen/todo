@@ -1,7 +1,8 @@
 language: node_js
-os: widnows
 
 cache: npm
+
+install: npm ci
 
 script: npm run build
 
