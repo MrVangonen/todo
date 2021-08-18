@@ -2,7 +2,7 @@ language: node_js
 
 cache: npm
 
-install: npm ci
+install: npm i
 
 script: npm run build
 
