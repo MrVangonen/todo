@@ -1,0 +1,8 @@
+{
+    "newTodo": {
+        "placeholder": "What needs to be done?"
+    },
+    "extra": {
+        "from": "from"
+    }
+}
