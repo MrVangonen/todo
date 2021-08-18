@@ -2,9 +2,9 @@
   <div class="todo-wrapper">
     <input
       v-show="localTodo.editing"
-      @keydown.enter="editTodo(todo)"
-      @keydown.esc="localTodo.editing = false"
-      @blur="editTodo(todo)"
+      @keydown.enter="editTodo()"
+      @keydown.esc="editTodo(true)"
+      @blur="editTodo()"
       class="todo__edit"
       v-model="localTodo.title"
       v-focus
@@ -58,10 +58,10 @@ export default {
       this.cachedTitle = this.localTodo.title;
       this.localTodo.editing = true;
     },
-    editTodo() {
+    editTodo(isEsc) {
       this.localTodo.editing = false;
 
-      if (this.localTodo.title.trim().length == 0) {
+      if (this.localTodo.title.trim().length == 0 || isEsc) {
         this.localTodo.title = this.cachedTitle;
       }
     },

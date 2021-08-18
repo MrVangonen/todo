@@ -3,6 +3,8 @@
         "placeholder": "Что необходимо сделать?"
     },
     "extra": {
-        "from": "из"
+        "from": "из",
+        "clear_completed": "убрать выбраные",
+        "check_all": "отметить все"
     }
 }

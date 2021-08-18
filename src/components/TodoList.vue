@@ -23,13 +23,15 @@
           type="checkbox"
           id="check-all"
         />
-        <label class="extra__check-all-label" for="check-all">check all</label>
+        <label class="extra__check-all-label" for="check-all">{{
+          $t("extra.check_all")
+        }}</label>
         <button
           v-show="completedTodosCount"
           @click="clearCompleted()"
           class="extra__clear-btn"
         >
-          clear completed
+          {{ $t("extra.clear_completed") }}
         </button>
         <div class="extra__todos">
           <span class="extra__todos-completed"
@@ -169,13 +171,18 @@ export default {
   transition: ease-in 1s;
   padding: 1rem 0;
 
+  /* anitselect text */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
   &__check-all {
     min-height: 3rem;
     min-width: 3rem;
     padding: 1rem;
     transition: 0.1s;
     cursor: pointer;
-    margin-left: 0.5rem;
+    margin-left: 1rem;
 
     &:checked {
       mix-blend-mode: exclusion;

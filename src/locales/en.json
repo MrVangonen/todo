@@ -3,6 +3,8 @@
         "placeholder": "What needs to be done?"
     },
     "extra": {
-        "from": "from"
+        "from": "from",
+        "clear_completed": "clear completed",
+        "check_all": "check all"
     }
 }
