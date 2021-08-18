@@ -1,6 +1,7 @@
 language: node_js
-
-cache: npm
+node_js:
+  - 14
+  - node
 
 script: npm run build
 
